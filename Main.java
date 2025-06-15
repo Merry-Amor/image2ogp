@@ -227,7 +227,7 @@ public class Main {
                         line += 1;
                         stringSpot = 0;
                     }
-                    System.out.println("stinrgSplit2[j] : " + stinrgSplit2[j] + " line : " + line);
+                    // System.out.println("stinrgSplit2[j] : " + stinrgSplit2[j] + " line : " + line);
                     g2d.drawString(stinrgSplit2[j], imageWidth + (18 * stringSpot), (18 * line)); // (x, y) は画像内の位置
                     stringSpot += 1;
                 }
