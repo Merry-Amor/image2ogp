@@ -218,21 +218,22 @@ public class Main {
 
                 line += 1;
 
+                if ((18 * line) > 378) {
+                    break;
+                }
+
                 String[] stinrgSplit2 = stringSplit[i].split("");
 
                 int stringSpot = 0;
 
                 for (int j = 0; j < stinrgSplit2.length; j++) {
-                    if ((imageWidth + (18 * stringSpot)) >= 800) {
+                    if ((imageWidth + (18 * stringSpot)) >= 782) {
                         line += 1;
                         stringSpot = 0;
                     }
                     // System.out.println("stinrgSplit2[j] : " + stinrgSplit2[j] + " line : " + line);
-                    g2d.drawString(stinrgSplit2[j], imageWidth + (18 * stringSpot), (18 * line)); // (x, y) は画像内の位置
+                    g2d.drawString(stinrgSplit2[j], imageWidth + (18 * stringSpot), ((18 * line) + 18)); // (x, y) は画像内の位置
                     stringSpot += 1;
-                }
-                if ((18 * line) > 419) {
-                    break;
                 }
 
             }
